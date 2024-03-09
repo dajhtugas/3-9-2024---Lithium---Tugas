@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        var number = Math.floor(Math.random() * 1001);
+        var onesplace=number%10;
+        var tensplace=number%100 - onesplace;
+        var hundreds=number-tensplace-onesplace;
+        var string1 = "Randomly Generated Number: ";
+        var textdisplay=string1.concat(number);
+        var td=new Date();
+        
+        document.write(textdisplay + " <br><br>Breakdown: "+ hundreds + ", "+tensplace+", "+ onesplace+"<br><br>Generated on: "+td)
+
+
+       
+    </script>
+</body>
+</html>
